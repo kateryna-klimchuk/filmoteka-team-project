@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Finkons.github.io/team-project-filmoteka",
+  "homepage": "https://github.com/kateryna-klimchuk/filmoteka-team-project.git",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-filmoteka/"
+    "build": "parcel build src/*.html --public-url /filmoteka-team-project/"
   },
   "repository": {
     "type": "git",
