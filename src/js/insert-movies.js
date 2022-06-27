@@ -79,12 +79,6 @@ export function insertPopularMovies(query, page = 1) {
     });
   }
 
-  // if (query) {
-  //   createSearchFetch(query,page)
-  //   .then(res => {
-  //     renderMoviesList(res); // how it renders HTML inside DOM?
-  //     stopLoader();
-  //   })
   else {
     insertGenresToMovies(page)
       .then(res => {

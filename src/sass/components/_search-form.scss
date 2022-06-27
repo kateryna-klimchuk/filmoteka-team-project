@@ -21,10 +21,6 @@
     color: rgb(246, 181, 61);
     box-shadow: 1px 1px 8px 3px rgba(243, 205, 135, 0.88);
   }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
 .icon-droplet {
@@ -37,22 +33,9 @@
 
 .search-form__wrap {
   display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    transform: translateX(120px);
-    padding: 30px 30px;
-    padding-bottom: 0;
-    z-index: 99;
-  }
-
-  @media screen and (min-width: 1024px) {
-    transform: translateX(250px);
-  }
 }
 
 .search-form__wrap.is-open {
-  @media screen and (max-width: 767px) {
     display: block;
 
     position: absolute;
@@ -67,7 +50,6 @@
     height: fit-content;
 
     z-index: 99;
-  }
 }
 
 .genre-search {
@@ -76,7 +58,7 @@
   justify-content: start;
 
   padding: 30px 30px;
-  max-width: 250px;
+  min-width: 250px;
 
   box-shadow: 1px 1px 12px 3px var(--secondary-bg-color);
   border-radius: 5px;
@@ -85,11 +67,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 
     padding: 20px 20px;
-    max-width: 400px;
-
+    width: 600px;
     transition: box-shadow 250ms linear, transform 250ms linear;
 
     &:hover {
@@ -118,10 +99,11 @@
 select {
   border: 1px solid rgb(207, 167, 94);
   border-radius: 5px;
-  width: fit-content;
+  min-width: 120px;
 }
 
 option {
   padding: 20px;
   background-color: rgb(246, 242, 238);
+  min-width: 100%;
 }
